@@ -81,28 +81,27 @@ const Navigation = () => {
           }`}>
             Projects
           </span>
-          
         </Link>
 
         {/* Sous-menu deroulant */}
         <div className='absolute top-full left-0 pt-5   w-48 opacity-0 invisible group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 group-hover:visible'>
             <div className='py-2'>
               <Link
-              href='/project/residentialDesign'
+              href='/residentialDesign'
               className='block px-4 py-2 text-gray-700 hover:bg-gray-100'
               >
                 Residential Design
               </Link>
 
               <Link
-              href='/project/commercialDesign'
+              href='/commercialDesign'
               className='block px-4 py-2 text-gray-700 hover:bg-gray-100'
               >
                 Commercial Design
               </Link>
 
               <Link
-              href='/project/experientialDesign'
+              href='/experientialDesign'
               className='block px-4 py-2 text-gray-700 hover:bg-gray-100'
               >
                 Experiential Design
