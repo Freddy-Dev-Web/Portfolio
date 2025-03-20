@@ -16,7 +16,7 @@ const Navigation = () => {
         href='/'
         className='relative group px-2 py-1 transition-colors'
         >
-          <span className={`text-3xl  ${
+          <span className={`text-3xl font-serif ${
            pathname === '/' ? 'group-hover:text-gray-600' : 'text-black'
           }`}>
             CentroDev
@@ -31,7 +31,7 @@ const Navigation = () => {
         href='/work'
         className='relative group px-2 py-1 transition-colors '
         >
-          <span className={`text-base ${
+          <span className={`text-base active:underline ${
            pathname === '/work' 
            ? 'group-hover:text-gray-600 text-gray-600 underline underline-offset-3' 
            : 'text-black '

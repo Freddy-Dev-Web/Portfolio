@@ -11,7 +11,7 @@ const PageWork = () => {
         <span className="text-1.5xl">
           Our Mission
         </span>
-        <div className=" text-5xl text-center pt-10 leading-15">
+        <div className="font-serif text-5xl text-center pt-10 leading-15">
           <h1>
                Creating spaces that are <br /> comfortable, memorable and <br /> inspiring.
           </h1>
