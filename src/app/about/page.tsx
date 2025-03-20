@@ -7,7 +7,7 @@ const PageAbout = () => {
     <>
     <div className="flex  justify-between pt-60 pb-25 px-10">
       {/* Left Section */}
-      <div className='text-5xl'>
+      <div className='font-serif text-5xl'>
         <h2>Who we are</h2>
       </div>
 
@@ -22,12 +22,12 @@ const PageAbout = () => {
           </p>
         </div>
         {/* Image */}
-        <div className='pt-35'>
+        <div className='relative h-180 w-180 mt-25'>
           <Image 
-          src="/img/about-1.jpg" 
+          src="/images/about-us/about-us.jpg" 
           alt="about" 
-          width={700}
-          height={800}
+          className='object-cover'
+          fill
           />
         </div>
       </div>

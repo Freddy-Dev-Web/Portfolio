@@ -1,123 +1,111 @@
-import React from 'react'
-import Image from 'next/image';
+import Image from 'next/image'
 import Button from '../components/Button'
 import Footer from '../components/footer'
 
 
-const PageWork = () => {
+const Work = () => {
   return (
     <>
-    <div className="flex flex-col items-center justify-center min-h-screen pt-50 pb-15 px-5">
-        <span className="text-1.5xl">
-          Our Mission
-        </span>
-        <div className="font-serif text-5xl text-center pt-10 leading-15">
-          <h1>
-               Creating spaces that are <br /> comfortable, memorable and <br /> inspiring.
-          </h1>
+      <div className='pt-50 pb-25 px-15 '>
+        <div className='flex flex-col justify-center  items-center pb-30'>
+          <p className='text-1xl pb-10'>
+            Our Mission
+          </p>
+          <p className='font-serif leading-13 text-center text-5xl'>
+          Creating spaces that are <br /> comfortable, memorable and <br /> inspiring.
+          </p>
         </div>
 
-        {/* Residential Section */}
-        <div>
-          <section className='pt-30'>
-            <div className=''>
+          {/* Residential Section */} 
+          <div>
+            <div className='relative h-150'>
               <Image 
-              src="/img/residential/los-angeles.jpg" 
-              alt="los-angeles" 
-              width={1200}
-              height={100}
+              src='/images/residential/Stocksy_txp9c995bd1cMI100_Large_1192028 (1).jpg' 
+              alt="Residential Design"
+              className='object-cover'
+              fill
               />
             </div>
 
-            <div className='flex justify-between items-center pt-15'>
+            <div className='flex justify-between py-25'>
+              {/* Left text */}
               <div className=''>
-              <div className='text-4xl'>
-              <h2>
+                <h3 className='font-serif text-4xl pb-10'>
                 Residential Design
-              </h2>
+                </h3>
+                <p className='text-[18px]'>
+                Apartments, homes and vacation properties.
+                </p>
               </div>
-              <div className='pt-10 text-1xl'>
-              <span>
-              Apartments, homes and vacation properties.
-              </span>
-              </div>
-              </div>
-
-              {/* Button Section */}
+              {/* Right Button */}
               <div>
-              <Button />
+                <Button />
               </div>
             </div>
-          </section>
+          </div>
 
-            {/* Commercial Section */}
-          <section className='pt-30'>
-            <div>
+          {/* Commercial Section */}
+          <div>
+            <div className='relative h-130'>
               <Image 
-              src="/img/commercial/blog-1.jpg" 
-              alt="blog-1" 
-              width={1200}
-              height={100}
+              src='/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1188910.jpg' 
+              alt="Commercial Design"
+              className='object-cover'
+              fill
               />
             </div>
 
-            <div className='flex justify-between items-center pt-15'>
-              <div>
-              <div className='text-4xl'>
-              <h2>
+            <div className='flex justify-between py-25'>
+              {/* Left text */}
+              <div className=''>
+                <h3 className='font-serif text-4xl pb-10'>
                 Commercial Design
-              </h2>
+                </h3>
+                <p className='text-[18px]'>
+                Creative and inviting retail and hospitality environments
+                </p>
               </div>
-              <div className='pt-10 text-1xl'>
-              <span>
-              Apartments, homes and vacation properties.
-              </span>
+              {/* Right Button */}
+              <div>
+                <Button />
               </div>
-              </div>
-
-              {/* Buttton Section */}
-              <Button />
             </div>
-          </section>
-          
+          </div>
+
           {/* Experiential Section */}
-          <section className='pt-30'>
-            <div>
+          <div>
+            <div className='relative h-150 translate-y-10 '>
               <Image 
-              src="/img/experiential/deco3.jpg" 
-              alt="los-angeles" 
-              width={1200}
-              height={100}
+              src='/images/experiential/download+copy+2 (1).jpeg' 
+              alt="Commercial Design"
+              className='object-cover '
+              fill
               />
             </div>
 
-            <div className='flex justify-between items-center pt-15'>
-              <div>
-              <div className='text-4xl'>
-              <h2>
+            <div className='flex justify-between pt-30'>
+              {/* Left text */}
+              <div className=''>
+                <h3 className='font-serif text-4xl pb-10'>
                 Experiential Design
-              </h2>
+                </h3>
+                <p className='text-[18px]'>
+                Temporary and permanent branded spaces.
+                </p>
               </div>
-              <div className='pt-10 text-1xl'>
-              <span>
-              Apartments, homes and vacation properties.
-              </span>
+              {/* Right Button */}
+              <div>
+                <Button />
               </div>
-              </div>
-
-              {/* Button Section */}
-              <Button />
             </div>
-          </section>
-        </div>
+          </div>
+      </div>
 
-    </div>
-        <div>
-          {/* Footer Section */}
-        <Footer />
-        </div>
+      {/* Footer Section */}
+      <div>
+        <Footer/>
+      </div>
     </>
-  );
+  )
 }
-
-export default PageWork
+export default Work
