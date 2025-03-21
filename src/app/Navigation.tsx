@@ -118,7 +118,7 @@ const Navigation = () => {
         >
           <span className={`text-base text-white  ${
            pathname === '/contact' 
-           ? 'group-hover:text-gray-500 text-gray-600' 
+           ? ' hover:bg-gray-950 text-gray-600' 
            : 'text-black'
           }`}>
             Contact Us
