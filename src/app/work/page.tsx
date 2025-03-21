@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Button from '../components/Button'
 import Footer from '../components/footer'
 
@@ -39,7 +40,12 @@ const Work = () => {
               </div>
               {/* Right Button */}
               <div>
+                <Link 
+                href='/residentialDesign' 
+                 className='cursor-pointer'
+                >
                 <Button />
+                </Link>
               </div>
             </div>
           </div>
@@ -67,7 +73,12 @@ const Work = () => {
               </div>
               {/* Right Button */}
               <div>
+              <Link 
+                href='/commercialDesign' 
+                 className='cursor-pointer'
+                >
                 <Button />
+                </Link>
               </div>
             </div>
           </div>
@@ -95,7 +106,12 @@ const Work = () => {
               </div>
               {/* Right Button */}
               <div>
+              <Link 
+                href='/experientialDesign' 
+                 className='cursor-pointer'
+                >
                 <Button />
+                </Link>
               </div>
             </div>
           </div>

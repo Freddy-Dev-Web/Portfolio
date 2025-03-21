@@ -59,7 +59,7 @@ const PageContact = () => {
           <p className='pb-2'>First Name</p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 px-8'
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-13'
           required
           />
           </div>
@@ -69,7 +69,7 @@ const PageContact = () => {
           <p className='pb-2'>Last Name</p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 px-8 '
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-13'
           required/>
           </div>
           </div>
@@ -78,10 +78,10 @@ const PageContact = () => {
         {/* Email Section */}
         <div>
           <div>
-          <p className='pb-2'>Email <span className='bg-gray-100'>(required)</span></p>
+          <p className='pb-2'>Email <span className='text-gray-300'>(required)</span></p>
           <input 
           type="email" 
-          className='bg-gray-100 rounded-lg py-2 pr-83'
+          className='bg-gray-100 rounded-lg py-2 pl-3  pr-80'
           required
           />
           </div>
@@ -90,10 +90,10 @@ const PageContact = () => {
         {/* Phone Section */}
         <div>
           <div>
-          <p className='pb-2'>Phone <span className='bg-gray-100'>(required)</span></p>
+          <p className='pb-2'>Phone <span className='text-gray-300'>(required)</span></p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 pr-83'
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-80'
           required
           />
           </div>
@@ -102,10 +102,10 @@ const PageContact = () => {
         {/* Subject Section */}
         <div>
           <div>
-          <p className='pb-2 '>Subject <span className='bg-gray-100'>(required)</span></p>
+          <p className='pb-2 '>Subject <span className='text-gray-300'>(required)</span></p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 pr-83'
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-80'
           required
           />
           </div>
@@ -114,9 +114,9 @@ const PageContact = () => {
         {/* Phone Section */}
         <div>
           <div>
-          <p className='pb-2'>Message <span>(required)</span></p>
+          <p className='pb-2'>Message <span className='text-gray-300'>(required)</span></p>
           <textarea
-          className='bg-gray-100 rounded-lg py-7 pr-87' 
+          className='bg-gray-100 rounded-lg pb-10 pt-3 pl-3 pr-86' 
           name="Message"
           required
           />

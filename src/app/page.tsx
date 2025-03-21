@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Button from './components/Button'
 import Footer from './components/footer'
 
 
-const Work = () => {
+const Principale = () => {
   return (
     <>
       <div className='pt-50 pb-25 px-15 '>
@@ -39,7 +40,12 @@ const Work = () => {
               </div>
               {/* Right Button */}
               <div>
+                <Link 
+                href='/residentialDesign' 
+                 className='cursor-pointer'
+                >
                 <Button />
+                </Link>
               </div>
             </div>
           </div>
@@ -67,7 +73,12 @@ const Work = () => {
               </div>
               {/* Right Button */}
               <div>
+              <Link 
+                href='/commercialDesign' 
+                 className='cursor-pointer'
+                >
                 <Button />
+                </Link>
               </div>
             </div>
           </div>
@@ -95,7 +106,12 @@ const Work = () => {
               </div>
               {/* Right Button */}
               <div>
+              <Link 
+                href='/experientialDesign' 
+                 className='cursor-pointer'
+                >
                 <Button />
+                </Link>
               </div>
             </div>
           </div>
@@ -108,4 +124,4 @@ const Work = () => {
     </>
   )
 }
-export default Work
+export default Principale
