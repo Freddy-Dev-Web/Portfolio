@@ -78,7 +78,7 @@ const PageContact = () => {
         {/* Email Section */}
         <div>
           <div>
-          <p className='pb-2'>Email <span>(required)</span></p>
+          <p className='pb-2'>Email <span className='bg-gray-100'>(required)</span></p>
           <input 
           type="email" 
           className='bg-gray-100 rounded-lg py-2 pr-83'
@@ -90,7 +90,7 @@ const PageContact = () => {
         {/* Phone Section */}
         <div>
           <div>
-          <p className='pb-2'>Phone <span>(required)</span></p>
+          <p className='pb-2'>Phone <span className='bg-gray-100'>(required)</span></p>
           <input 
           type="text" 
           className='bg-gray-100 rounded-lg py-2 pr-83'
@@ -102,7 +102,7 @@ const PageContact = () => {
         {/* Subject Section */}
         <div>
           <div>
-          <p className='pb-2 '>Subject <span>(required)</span></p>
+          <p className='pb-2 '>Subject <span className='bg-gray-100'>(required)</span></p>
           <input 
           type="text" 
           className='bg-gray-100 rounded-lg py-2 pr-83'
