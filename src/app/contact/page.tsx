@@ -10,12 +10,12 @@ import Footer from '../components/footer'
 const PageContact = () => {
   return (
     <>
-    <div className='flex justify-between items-center pt-50 pb-30 px-15'>
+    <div className='flex justify-between items-center pt-50 pb-30 px-15 lg:px-13'>
       {/* Left Part */}
-      <div className='space-y-12 pb-45'>
+      <div className='space-y-12 lg:space-y-10 pb-45'>
         <div>
-        <h2 className='text-5xl font-serif pb-13'>Contact Us</h2>
-        <p className='leading-8 text-[18px]'>
+        <h2 className='text-5xl lg:text-3xl font-serif pb-13'>Contact Us</h2>
+        <p className='leading-8 lg:leading-6 text-[18px] lg:text-[15px]'>
         If you have any questions or comments, please contact us via email <br /> or phone, or send us a message using the contact form.
         </p>
         </div>
@@ -25,7 +25,7 @@ const PageContact = () => {
           <h2 className='font-bold pb-1'>
             Email
           </h2>
-          <span className='text-[17px]'>
+          <span className='text-[17px] lg:text-[15px]'>
           email@example.com
           </span>
         </div>
@@ -35,7 +35,7 @@ const PageContact = () => {
           <h2 className='font-bold pb-1'>
             Phone
           </h2>
-          <span className='text-[17px]'>
+          <span className='text-[17px] lg:text-[15px]'>
           (555) 555-5555
           </span>
         </div>
@@ -47,8 +47,9 @@ const PageContact = () => {
         <FaTwitter />
         </div>
       </div>
+
       {/* Right Part */}
-      <div className='space-y-5'>
+      <div className='space-y-5 lg:space-3'>
         {/* Name Section */}
         <div className=''>
           <h3 className='pb-5'>Name <span className='text-gray-300'>(required)</span></h3>
@@ -56,20 +57,20 @@ const PageContact = () => {
 
             {/* First Name */}
           <div>
-          <p className='pb-2'>First Name</p>
+          <p className='pb-2 lg:pb-0'>First Name</p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 pl-3 pr-13'
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-15 lg:pr-6'
           required
           />
           </div>
 
           {/* Last Name */}
           <div>
-          <p className='pb-2'>Last Name</p>
+          <p className='pb-2 lg:pb-0'>Last Name</p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 pl-3 pr-13'
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-15 lg:pr-6'
           required/>
           </div>
           </div>
@@ -78,10 +79,10 @@ const PageContact = () => {
         {/* Email Section */}
         <div>
           <div>
-          <p className='pb-2'>Email <span className='text-gray-300'>(required)</span></p>
+          <p className='pb-2 lg:pb-0'>Email <span className='text-gray-300'>(required)</span></p>
           <input 
           type="email" 
-          className='bg-gray-100 rounded-lg py-2 pl-3  pr-80'
+          className='bg-gray-100 rounded-lg py-2 pl-3  pr-80 lg:pr-65'
           required
           />
           </div>
@@ -93,7 +94,7 @@ const PageContact = () => {
           <p className='pb-2'>Phone <span className='text-gray-300'>(required)</span></p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 pl-3 pr-80'
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-80 lg:pr-65'
           required
           />
           </div>
@@ -105,18 +106,18 @@ const PageContact = () => {
           <p className='pb-2 '>Subject <span className='text-gray-300'>(required)</span></p>
           <input 
           type="text" 
-          className='bg-gray-100 rounded-lg py-2 pl-3 pr-80'
+          className='bg-gray-100 rounded-lg py-2 pl-3 pr-80 lg:pr-65'
           required
           />
           </div>
         </div>
 
-        {/* Phone Section */}
+        {/* Message Section */}
         <div>
           <div>
           <p className='pb-2'>Message <span className='text-gray-300'>(required)</span></p>
           <textarea
-          className='bg-gray-100 rounded-lg pb-10 pt-3 pl-3 pr-86' 
+          className='bg-gray-100 rounded-lg pb-10 pt-3 pl-3 pr-70' 
           name="Message"
           required
           />
@@ -124,7 +125,7 @@ const PageContact = () => {
           </div>
           {/* Button Section */}
           <div className='pt-5'>
-            <button className='bg-black text-white text-sm font-bold rounded-md py-6 px-11'>
+            <button className='bg-black text-white text-sm font-bold rounded-md py-6 lg:py-6 lg:px-11 px-11'>
               Submit
             </button>
           </div>

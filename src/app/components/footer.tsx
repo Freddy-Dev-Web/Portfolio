@@ -2,7 +2,7 @@ import React from 'react'
 
 const footer = () => {
   return (
-    <div className='bg-gray-100 flex justify-between items-center py-16 px-19'>
+    <div className='bg-gray-100 flex justify-between items-center py-16 lg:py-14 lg:px-11 px-19'>
         {/* Left Footer */}
         <div className='space-y-8'>
             <h3 className='font-serif text-2xl'>CentroDev</h3>
@@ -23,8 +23,8 @@ const footer = () => {
         </div>
 
         {/* Right Footer */}
-        <div className='flex items-center space-x-30'>
-            <div className='space-y-8'>
+        <div className='flex items-center space-x-30 lg:space-x-25 '>
+            <div className='leading-8 lg:space-y-4'>
                 <h3 className='font-serif text-2xl'>About</h3>
                 <div className='text-1.5xl leading-8 tracking-wider'>
                     <a href="#" className='underline underline-offset-3'>work</a><br />
@@ -33,7 +33,7 @@ const footer = () => {
                 </div>
             </div>
 
-            <div className='space-y-8'>
+            <div className='space-y-8 lg:space-y-4'>
                 <h3 className='font-serif text-2xl'>Pojects</h3>
                 <div className='leading-8'>
                     <a href="#" className='underline underline-offset-3'>Residential Design</a><br />

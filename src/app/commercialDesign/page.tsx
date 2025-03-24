@@ -5,9 +5,9 @@ import Image from 'next/image'
 const pageCommercial = () => {
   return (
     <>
-            <div className="flex  justify-between pt-60 pb-25 px-10">
+            <div className="flex  justify-between pt-60 pb-25 px-10 lg:px-13">
               {/* Left Section */}
-              <div className='font-serif text-5xl'>
+              <div className='font-serif text-5xl lg:text-3xl'>
                 <h2>Commercial Design</h2>
               </div>
               
@@ -15,7 +15,7 @@ const pageCommercial = () => {
               {/* Right Section */}
               <div>
                 {/* Text */}
-                <div className='text-[18px] leading-8'>
+                <div className='text-[18px] lg:text-[15px] leading-8'>
                   <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br /> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br /> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br /> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <br /> laborum.
                     <br /><br />
@@ -26,8 +26,8 @@ const pageCommercial = () => {
               </div>
 
               {/* Image */}
-            <div className='grid grid-cols-2 px-15 '>
-                <div className='relative h-150 w-150 mt-5'>
+            <div className='grid grid-cols-2 px-15 lg:10 '>
+                <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-5'>
                   <Image 
                   src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1188910.jpg" 
                   alt="about" 
@@ -36,7 +36,7 @@ const pageCommercial = () => {
                   />
                 </div>
 
-                <div className='relative h-150 w-150 mt-5'>
+                <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-5'>
                   <Image 
                   src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1192032.jpg" 
                   alt="about" 
@@ -45,7 +45,7 @@ const pageCommercial = () => {
                   />
                 </div>
 
-                <div className='relative h-150 w-150 mt-3'>
+                <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
                   <Image 
                   src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1192030.jpg" 
                   alt="about" 
@@ -54,7 +54,7 @@ const pageCommercial = () => {
                   />
                 </div>
 
-                <div className='relative h-150 w-150 mt-3'>
+                <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
                   <Image 
                   src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1183959.jpg" 
                   alt="about" 
