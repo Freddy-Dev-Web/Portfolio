@@ -7,22 +7,27 @@ import Footer from '../components/footer'
 const Work = () => {
   return (
     <>
-      <div className='pt-50 pb-25 px-15 '>
-        <div className='flex flex-col justify-center  items-center pb-30'>
-          <p className='text-1xl pb-10'>
-            Our Mission
+      <div className='pt-45 pb-25 px-15 '>
+        <div className='flex flex-col justify-center  items-center pb-20'>
+          <p className='text-5xl pb-5 font-semibold text-blue-400'>
+            Hello
           </p>
-          <p className='font-serif leading-13 text-center text-5xl'>
-          Creating spaces that are <br /> comfortable, memorable and <br /> inspiring.
+          <p className='font-serif leading-11 text-center text-4xl'>
+           I am a Full-stack Web & Mobile developer who<br /> transforms your ideas in high-performance <br /> and innovative digital solutions.<br /> Ready to make your idea a reality ?<br />
+           <Link href='/contact'>
+           <span className='font-semibold hover:text-blue-400 cursor-pointer'>
+            Contact-me
+            </span>
+           </Link>.
           </p>
         </div>
 
-          {/* Residential Section */} 
-          <div>
+          {/* Custom Web Development Section */} 
+          <div className=''>
             <div className='relative h-150'>
               <Image 
-              src='/images/residential/Stocksy_txp9c995bd1cMI100_Large_1192028 (1).jpg' 
-              alt="Residential Design"
+              src='/imgs/CustomWebDevelopment/Custom.jpg' 
+              alt="CustomWebDevelopment"
               className='object-cover'
               fill
               />
@@ -31,17 +36,17 @@ const Work = () => {
             <div className='flex justify-between py-25'>
               {/* Left text */}
               <div className=''>
-                <h3 className='font-serif text-4xl pb-10'>
-                Residential Design
+                <h3 className='font-serif text-4xl pb-8'>
+                Custom Web Development
                 </h3>
                 <p className='text-[18px]'>
-                Apartments, homes and vacation properties.
+                Full-stack solutions optimized for performance and SEO
                 </p>
               </div>
               {/* Right Button */}
               <div>
                 <Link 
-                href='/residentialDesign' 
+                href='/CustomWebDevelopment' 
                  className='cursor-pointer'
                 >
                 <Button />
@@ -50,11 +55,11 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Commercial Section */}
+          {/* Mobile App Development Section */}
           <div>
-            <div className='relative h-130'>
+            <div className='relative h-150'>
               <Image 
-              src='/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1188910.jpg' 
+              src='/imgs/MobileAppDevelopment/MobileApp.jpg' 
               alt="Commercial Design"
               className='object-cover'
               fill
@@ -64,17 +69,17 @@ const Work = () => {
             <div className='flex justify-between py-25'>
               {/* Left text */}
               <div className=''>
-                <h3 className='font-serif text-4xl pb-10'>
-                Commercial Design
+                <h3 className='font-serif text-4xl pb-8'>
+                Mobile App Development 
                 </h3>
                 <p className='text-[18px]'>
-                Creative and inviting retail and hospitality environments
+                One codebase for IOS, Android, and PWA
                 </p>
               </div>
               {/* Right Button */}
               <div>
               <Link 
-                href='/commercialDesign' 
+                href='/MobileAppDevelopment' 
                  className='cursor-pointer'
                 >
                 <Button />
@@ -83,11 +88,11 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Experiential Section */}
+          {/* UX/UI Design Section */}
           <div>
             <div className='relative h-150 translate-y-10 '>
               <Image 
-              src='/images/experiential/download+copy+2 (1).jpeg' 
+              src='/imgs/UI-UX Design/Design.webp' 
               alt="Commercial Design"
               className='object-cover '
               fill
@@ -97,17 +102,17 @@ const Work = () => {
             <div className='flex justify-between pt-30'>
               {/* Left text */}
               <div className=''>
-                <h3 className='font-serif text-4xl pb-10'>
-                Experiential Design
+                <h3 className='font-serif text-4xl pb-8'>
+                UI/UX Design
                 </h3>
                 <p className='text-[18px]'>
-                Temporary and permanent branded spaces.
+                User-centric design, tested and optimized
                 </p>
               </div>
               {/* Right Button */}
               <div>
               <Link 
-                href='/experientialDesign' 
+                href='/uiuxDesign' 
                  className='cursor-pointer'
                 >
                 <Button />
@@ -115,6 +120,40 @@ const Work = () => {
               </div>
             </div>
           </div>
+
+            {/* API & BACKEND Development Section */}
+            <div>
+            <div className='relative h-150 translate-y-10 '>
+              <Image 
+              src='/imgs/API & BACKEND Development/Backend.jpg' 
+              alt="Commercial Design"
+              className='object-cover '
+              fill
+              />
+            </div>
+
+            <div className='flex justify-between pt-30'>
+              {/* Left text */}
+              <div className=''>
+                <h3 className='font-serif text-4xl pb-8'>
+                API & Backend Development
+                </h3>
+                <p className='text-[18px]'>
+                Robust backends to support thousands of users
+                </p>
+              </div>
+              {/* Right Button */}
+              <div>
+              <Link 
+                href='/API-BackendDevelopment' 
+                 className='cursor-pointer'
+                >
+                <Button />
+                </Link>
+              </div>
+            </div>
+          </div>
+
       </div>
 
       {/* Footer Section */}

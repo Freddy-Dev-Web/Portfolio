@@ -2,13 +2,13 @@ import React from 'react'
 import Footer from '../components/footer'
 import Image from 'next/image'
 
-const pageExperiential = () => {
+const uiuxDesgin = () => {
   return (
     <>
                 <div className="flex  justify-between pt-60 pb-25 px-10 lg:px-13">
                   {/* Left Section */}
-                  <div className='font-serif text-5xl lg:text-3xl'>
-                    <h2>Experiential Design</h2>
+                  <div className='font-serif text-4xl '>
+                    <h2>UI/UX Design</h2>
                   </div>
                   
             
@@ -29,7 +29,7 @@ const pageExperiential = () => {
                 <div className='grid grid-cols-2 px-13 '>
                     <div className='relative h-150 w-150 lg:h-150 lg:w-150 mt-5'>
                       <Image 
-                      src="/images/experiential/download+copy+2 (1).jpeg" 
+                      src="public/imgs/UI-UX Design/Design1.webp/imgs/UI-UX Design/Design1.webp" 
                       alt="about" 
                       className='object-cover'
                       fill
@@ -38,7 +38,7 @@ const pageExperiential = () => {
     
                     <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-5'>
                       <Image 
-                      src="/images/experiential/Stocksy_txp9c995bd1cMI100_Large_1192042.jpg" 
+                      src="/imgs/UI-UX Design/Design2.webp" 
                       alt="about" 
                       className='object-cover'
                       fill
@@ -47,7 +47,7 @@ const pageExperiential = () => {
     
                     <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
                       <Image 
-                      src="/images/experiential/Stocksy_txp9c995bd1cMI100_Large_1192029.jpg" 
+                      src="/imgs/UI-UX Design/Design3.webp" 
                       alt="about" 
                       className='object-cover'
                       fill
@@ -56,7 +56,7 @@ const pageExperiential = () => {
     
                     <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
                       <Image 
-                      src="/images/experiential/Stocksy_txp9c995bd1cMI100_Large_1183977.jpg" 
+                      src="/imgs/UI-UX Design/Design4 (2).webp" 
                       alt="about" 
                       className='object-cover'
                       fill
@@ -94,4 +94,4 @@ const pageExperiential = () => {
   )
 }
 
-export default pageExperiential
+export default uiuxDesgin

@@ -3,23 +3,23 @@ import React from 'react'
 import Footer from '../components/footer'
 import Image from 'next/image'
 
-const PafeResidential = () => {
+const CustomWebDevelopment = () => {
 
 
   
   return (
     <>
-                    <div className="flex  justify-between pt-60 pb-25 px-10 lg:px-13">
+                    <div className="flex  justify-between pt-60 pb-25 px-10 ">
                       {/* Left Section */}
-                      <div className='font-serif text-5xl lg:text-3xl'>
-                        <h2>Residential Design</h2>
+                      <div className='font-serif text-4xl '>
+                        <h2>Custom Web Development</h2>
                       </div>
                       
                 
                       {/* Right Section */}
                       <div>
                         {/* Text */}
-                        <div className='text-[18px] lg:text-[15px] leading-8'>
+                        <div className='text-[18px]  leading-8'>
                           <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br /> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br /> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br /> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <br /> laborum.
                             <br /><br />
@@ -33,7 +33,7 @@ const PafeResidential = () => {
                     <div className='grid grid-cols-2 px-13  '>
                         <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-5'>
                           <Image 
-                          src="/images/residential/Stocksy_txp9c995bd1cMI100_Large_1192028 (1).jpg" 
+                          src="/imgs/CustomWebDevelopment/Custom.jpg" 
                           alt="about" 
                           className='object-cover'
                           fill
@@ -42,7 +42,7 @@ const PafeResidential = () => {
         
                         <div className='relative h-150 lg:h-150 w-180 lg:w-150 mt-5 ml-'>
                           <Image 
-                          src="/images/residential/Stocksy_txp9c995bd1cMI100_Large_1183996.jpg" 
+                          src="/imgs/CustomWebDevelopment/Custom1.jpg" 
                           alt="about" 
                           className='object-cover'
                           fill
@@ -51,7 +51,7 @@ const PafeResidential = () => {
         
                         <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
                           <Image 
-                          src="/images/residential/Stocksy_txp9c995bd1cMI100_Large_1184005.jpg" 
+                          src="/imgs/CustomWebDevelopment/Custom2.jpg" 
                           alt="about" 
                           className='object-cover'
                           fill
@@ -60,7 +60,7 @@ const PafeResidential = () => {
         
                         <div className='relative h-150 lg:h-150 w-180 lg:w-150 mt-3 ml-'>
                           <Image 
-                          src="/images/residential/Stocksy_txp9c995bd1cMI100_Large_1184002.jpg" 
+                          src="/imgs/CustomWebDevelopment/Custom3.jpg" 
                           alt="about" 
                           className='object-cover'
                           fill
@@ -98,4 +98,4 @@ const PafeResidential = () => {
   )
 }
 
-export default PafeResidential
+export default CustomWebDevelopment

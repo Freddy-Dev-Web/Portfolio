@@ -2,13 +2,13 @@ import React from 'react'
 import Footer from '../components/footer'
 import Image from 'next/image'
 
-const pageCommercial = () => {
+const MobileAppDevelopment = () => {
   return (
     <>
             <div className="flex  justify-between pt-60 pb-25 px-10 lg:px-13">
               {/* Left Section */}
-              <div className='font-serif text-5xl lg:text-3xl'>
-                <h2>Commercial Design</h2>
+              <div className='font-serif text-4xl '>
+                <h2>Mobile App Development</h2>
               </div>
               
         
@@ -29,7 +29,7 @@ const pageCommercial = () => {
             <div className='grid grid-cols-2 px-15 lg:10 '>
                 <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-5'>
                   <Image 
-                  src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1188910.jpg" 
+                  src="/imgs/MobileAppDevelopment/MobileApp1.jpg" 
                   alt="about" 
                   className='object-cover'
                   fill
@@ -38,7 +38,7 @@ const pageCommercial = () => {
 
                 <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-5'>
                   <Image 
-                  src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1192032.jpg" 
+                  src="/imgs/MobileAppDevelopment/MobileApp2.jpg" 
                   alt="about" 
                   className='object-cover'
                   fill
@@ -47,7 +47,7 @@ const pageCommercial = () => {
 
                 <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
                   <Image 
-                  src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1192030.jpg" 
+                  src="/imgs/MobileAppDevelopment/MobileApp3.jpg" 
                   alt="about" 
                   className='object-cover'
                   fill
@@ -56,7 +56,7 @@ const pageCommercial = () => {
 
                 <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
                   <Image 
-                  src="/images/commercial/Stocksy_txp9c995bd1cMI100_Large_1183959.jpg" 
+                  src="/imgs/MobileAppDevelopment/MobileApp4.jpg" 
                   alt="about" 
                   className='object-cover'
                   fill
@@ -95,4 +95,4 @@ const pageCommercial = () => {
   )
 }
 
-export default pageCommercial
+export default MobileAppDevelopment
