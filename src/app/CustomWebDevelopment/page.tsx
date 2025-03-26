@@ -9,9 +9,9 @@ const CustomWebDevelopment = () => {
   
   return (
     <>
-                    <div className="flex  justify-between pt-60 pb-25 px-10 ">
+                    <div className="flex  justify-between pt-60 pb-25 px-10 xl:px-10 md:px-0 ">
                       {/* Left Section */}
-                      <div className='font-serif text-4xl '>
+                      <div className='font-serif text-4xl xl:text-4xl md:text-3xl '>
                         <h2>Custom Web Development</h2>
                       </div>
                       
@@ -19,7 +19,7 @@ const CustomWebDevelopment = () => {
                       {/* Right Section */}
                       <div>
                         {/* Text */}
-                        <div className='text-[18px]  leading-8'>
+                        <div className='text-[18px] xl:text-[18px] md:text-[15px]  leading-8'>
                           <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br /> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br /> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br /> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <br /> laborum.
                             <br /><br />
@@ -30,8 +30,8 @@ const CustomWebDevelopment = () => {
                       </div>
         
                       {/* Image */}
-                    <div className='grid grid-cols-2 px-13  '>
-                        <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-5'>
+                    <div className='grid grid-cols-2 px-13 xl:px-13 md:px-0  '>
+                        <div className='relative h-150 xl:h-150 md:h-80 md:w-full  w-150 lg:w-150 mt-5'>
                           <Image 
                           src="/imgs/CustomWebDevelopment/Custom.jpg" 
                           alt="about" 
@@ -40,7 +40,7 @@ const CustomWebDevelopment = () => {
                           />
                         </div>
         
-                        <div className='relative h-150 lg:h-150 w-180 lg:w-150 mt-5 ml-'>
+                        <div className='relative h-150 xl:h-150 md:h-80 md:w-full xl w-180 lg:w-150 mt-5 ml-'>
                           <Image 
                           src="/imgs/CustomWebDevelopment/Custom1.jpg" 
                           alt="about" 
@@ -49,7 +49,7 @@ const CustomWebDevelopment = () => {
                           />
                         </div>
         
-                        <div className='relative h-150 lg:h-150 w-150 lg:w-150 mt-3'>
+                        <div className='relative h-150 xl:h-150 md:h-80 md:w-full  w-150 lg:w-150 mt-3'>
                           <Image 
                           src="/imgs/CustomWebDevelopment/Custom2.jpg" 
                           alt="about" 
@@ -58,7 +58,7 @@ const CustomWebDevelopment = () => {
                           />
                         </div>
         
-                        <div className='relative h-150 lg:h-150 w-180 lg:w-150 mt-3 ml-'>
+                        <div className='relative h-150 xl:h-150 md:h-80 md:w-full  w-180 lg:w-150 mt-3 ml-'>
                           <Image 
                           src="/imgs/CustomWebDevelopment/Custom3.jpg" 
                           alt="about" 

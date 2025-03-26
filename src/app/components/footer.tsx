@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 const footer = () => {
   return (
-    <div className='bg-gray-200 flex justify-between items-center py-16 lg:py-14 lg:px-11 px-19'>
+    <div className='bg-gray-200 flex justify-between items-center py-16 xl:py-16 md:py-13 xl:px-19 md:px-5  px-19'>
         {/* Left Footer */}
         <div className='space-y-8'>
-            <h3 className='font-serif text-2xl'>Centro<span className='text-blue-400'>Dev</span></h3>
+            <h3 className='font-serif text-2xl xl:text-2xl md:text-xl'>Centro<span className='text-blue-400'>Dev</span></h3>
             <div >
-                <p className='tracking-10 leading-7'>
+                <p className='tracking-10 leading-7 xl:leading-7 md:leading-5'>
                 123 Demo Street <br />
                 Brooklyn, NY 12345
                 </p>
@@ -25,7 +25,7 @@ const footer = () => {
         </div>
 
         {/* Right Footer */}
-        <div className='flex items-center space-x-30 lg:space-x-25 '>
+        <div className='flex items-center space-x-30 xl:space-30 md:space-15 '>
             <div className='leading-8 lg:space-y-4'>
                 <h3 className='font-serif text-2xl'>About</h3>
                 <div className='text-1.5xl  leading-8 tracking-wider'>
@@ -35,7 +35,7 @@ const footer = () => {
                 </div>
             </div>
 
-            <div className='space-y-8 lg:space-y-4'>
+            <div className='space-y-8 xl:space-y-8 md:space-5'>
                 <h3 className='font-serif text-2xl'>Pojects</h3>
                 <div className='leading-8'>
                     <Link href="/CustomWebDevelopment" className='underline hover:text-blue-400 underline-offset-3'>Custom Web Development</Link><br />

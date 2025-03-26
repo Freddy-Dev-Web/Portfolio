@@ -9,16 +9,16 @@ const Navigation = () => {
   const [openDropdown, setOpenDropdown]= useState<string | null>(null)
 
   return (
-    <div className='fixed md:inline-block top-0 left-0 z-50 w-screen'>
-      <nav className='flex justify-between items-center w-screen h-20 bg-white px-10 md:px-5 md:py-8   py-10 '>
+    <div className='fixed  md:inline-block  top-0 left-0 z-10'>
+      <nav className='flex  justify-between  items-center w-screen h-20 bg-gray-200 px-15 xl:px-15 md:px-8 py-12 xl:py-12 md:py-5'>
         {/*Link Logo */}
         <div>
           <Link
             href='/'
-            className='relative group px-2 py-1 transition-colors'
+            className='relative group px-2  py-1 transition-colors'
           >
             <span
-              className={`text-5xl md:text-2xl font-serif `}
+              className={`text-3xl xl:text-3xl md:text-xl font-serif `}
             >
               Centro<span className='text-blue-500'>Dev</span>
             </span>
@@ -27,16 +27,16 @@ const Navigation = () => {
 
                                     {/* Liens principaux (cachés sur petits écrans) */}
         <div
-          className={`hidden md:flex items-center space-x-3 md:space-x-2 text-sm md:text-[12px] lg:text-[20px]`}
+          className={`hidden md:flex items-center space-x-3 xl:space-x-3 md:space-x-0 text-xl xl:text-xl md:text-[10px]`}
         >
           {/* Link Work */}
           <Link
             href='/work'
             className='relative group px-2 py-1 transition-colors'
           >
-            <span className={`text-base hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white  ${
+            <span className={`text-base  hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 md:py-2 px-4 md:px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white  ${
               pathname === '/work'
-              ? 'group-hover:text-white border-blue-400   py-2 px-4 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
+              ? 'group-hover:text-white border-blue-400   py-2 xl:py-2 md:py-0 px-4 xl:px-4 md:px-2 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
               : 'text-black'
             }
               `}>
@@ -50,9 +50,9 @@ const Navigation = () => {
             href='/about'
             className='relative group px-2 py-1 transition-colors'
           >
-            <span className={`text-base hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white ${
+            <span className={`text-base  hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 md:py-2 px-4 md:px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white ${
               pathname === '/about'
-              ? 'group-hover:text-white border-blue-400   py-2 px-4 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
+              ? 'group-hover:text-white border-blue-400   py-2 xl:py-2 md:py-0 px-4 xl:px-4 md:px-2 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
               : 'text-black'
             }
               `}>
@@ -65,9 +65,9 @@ const Navigation = () => {
             href='/ourservices'
             className='relative group px-2 py-1 transition-colors'
           >
-            <span className={`text-base hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white ${
+            <span className={`text-base  hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 md:py-2 px-4 md:px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white ${
               pathname === '/ourservices'
-              ? 'group-hover:text-white border-blue-400   py-2 px-4 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
+              ? 'group-hover:text-white border-blue-400   py-2 xl:py-2 md:py-0 px-4 xl:px-4 md:px-2 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
               : 'text-black'
             }
               `}>
@@ -83,9 +83,9 @@ const Navigation = () => {
             href='/project'
             className='relative group px-2 py-1 transition-colors'
           >
-            <span className={`text-base hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white ${
+            <span className={`text-base  hover:bg-blue-500 border-blue-400 hover:border-blue-400 py-2 md:py-2 px-4 md:px-4 hover:px-4 hover:py-2 rounded-lg hover:rounded-lg transition duration-100 hover:font-bold hover:text-white ${
               pathname === '/project'
-              ? 'group-hover:text-white border-blue-400   py-2 px-4 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
+              ? 'group-hover:text-white border-blue-400   py-2 xl:py-2 md:py-0 px-4 xl:px-4 md:px-2 text-white bg-blue-400 rounded-lg  font-bold  underline underline-offset-3'
               : 'text-black'
             }
               `}>
@@ -114,12 +114,12 @@ const Navigation = () => {
                 Mobile App 
               </Link>
 
-              {/* Link UX/UI Design */}
+              {/* Link UI/UX Design */}
               <Link 
-              href='/uiuxDesign'
-              className='block px-2 py-2 hover:text-white text-gray-700 rounded-lg hover:bg-blue-400'
+              href='/UiuxDesign'
+              className='block px-1 py-1 hover:text-white text-gray-700 rounded-lg hover:bg-blue-400'
               >
-                UX/UI Design
+                UI/UX Design
               </Link>
 
               {/* Link API & BACKEND Development  */}
@@ -137,7 +137,7 @@ const Navigation = () => {
           {/* Link Contact Us */}
           <Link
             href='/contact'
-            className='relative group px-[30px] py-[20px] transition-colors bg-blue-400 hover:bg-blue-600 rounded-lg font-bold cursor-pointer text-white'
+            className='relative group px-[30px] xl:px-[30px] md:px-[2\15px] py-[22px] xl:py-[22px] md:py-[12px] transition-colors bg-blue-400 hover:bg-blue-600 rounded-lg font-bold cursor-pointer text-white'
           >
             Contact Us
           </Link>
@@ -235,18 +235,18 @@ const Navigation = () => {
 
           {/* Menu Mobile */}
           <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`} id='mobile-menu'>
-            <div className='absolute right-0 z-10 mt-2 w-full origin-top-right transform px-2 transition md:hidden'>
-              <div className='divide-y-2 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
-                <div className='px-2 pt-2 pb-3'>
+            <div className='absolute right-0 z-10 mt-2 w-full origin-top-right transform px-5 pt-7 transition md:hidden'>
+              <div className='divide-y-2  rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
+                <div className='px-2 pt-5 pb-5 text-center'>
                   {/* Link Work */}
                     <Link
                       href='/work'
                       onClick={() => setIsMenuOpen(false)}
-                      className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100'
+                      className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 '
                     >
-                      <span className={`text-base ${
+                      <span className={`text-[25px]  ${
                         pathname === '/work'
-                        ? 'group-hover:text-gray-500 text-gray-600 underline underline-offset-3'
+                        ? 'group-hover:text-blue-400 text-blue-400 underline underline-offset-3'
                         : 'text-black'
                       }
                         `}>
@@ -260,9 +260,9 @@ const Navigation = () => {
                       onClick={() => setIsMenuOpen(false)}
                       className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100'
                     >
-                      <span className={`text-base ${
+                      <span className={`text-[25px] ${
                         pathname === '/about'
-                        ? 'group-hover:text-gray-500 text-gray-600 underline underline-offset-3'
+                        ? 'group-hover:text-blue-400 text-blue-400 underline underline-offset-3'
                         : 'text-black'
                       }
                         `}>
@@ -276,9 +276,9 @@ const Navigation = () => {
                       onClick={() => setIsMenuOpen(false)}
                       className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100'
                       >
-                      <span className={`text-base ${
+                      <span className={`text-[25px] ${
                         pathname === '/ourservices'
-                        ? 'group-hover:text-gray-500 text-gray-600 underline underline-offset-3'
+                        ? 'group-hover:text-blue-400 text-blue-400 underline underline-offset-3'
                         : 'text-black'
                       }
                         `}>
@@ -287,10 +287,10 @@ const Navigation = () => {
                     </Link>
                     
                       {/* Link Projects avec sous-menu */}
-                      <div className='relative '>
+                      <div className='relative text-center '>
                       <button
                       onClick={() => setOpenDropdown(openDropdown === 'project' ? null : 'project')}
-                      className='w-full text-left rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100'
+                      className='w-full text-center  rounded-md px-3 py-2 text-[25px] font-medium text-black hover:bg-blue-400'
                       aria-expanded={openDropdown === "project"}
                       aria-controls="mobile-project-dropdown"
                       >
@@ -323,7 +323,7 @@ const Navigation = () => {
                       >
                       <span className={`text-base ${
                         pathname === '/CustomWebDevelopment'
-                        ? 'group-hover:text-gray-500 text-gray-600 underline underline-offset-3'
+                        ? 'group-hover:text-gray-500 text-blue-400 text-[20px] underline underline-offset-3'
                         : 'text-black'
                       }
                       `}>
@@ -342,7 +342,7 @@ const Navigation = () => {
                       >
                       <span className={`text-base ${
                         pathname === '/MobileAppDevelopment'
-                        ? 'group-hover:text-gray-500 text-gray-600 underline underline-offset-3'
+                        ? 'group-hover:text-gray-500 text-blue-400 text-[20px] underline underline-offset-3'
                         : 'text-black'
                       }
                       `}>
@@ -352,17 +352,17 @@ const Navigation = () => {
 
                       {/* Sous-liens UI/UX Design */}
                       <Link
-                      href='/uiuxDesign'
+                      href='/UiuxDesign'
                       onClick={() => {
                       setIsMenuOpen(false)
                       setOpenDropdown(null)
                       }}
-                      className='block px-3 py-2 text-sm text-gray-600 rounded-md hover:bg-gray-50'
+                      className='block px-3  py-2 text-sm text-gray-600 rounded-md hover:bg-gray-50'
                       >
                       <span className={`text-base ${
-                        pathname === '/uiuxDesign'
-                        ? 'group-hover:text-gray-500 text-gray-600 underline underline-offset-3'
-                        : 'text-blue-400'
+                        pathname === '/UiuxDesign'
+                        ? 'group-hover:text-gray-500 text-blue-400 text-[20px] underline underline-offset-3'
+                        : 'text-black'
                       }
                       `}>
                         UI/UX Design
@@ -376,12 +376,12 @@ const Navigation = () => {
                       setIsMenuOpen(false)
                       setOpenDropdown(null)
                       }}
-                      className='block px-3 py-2 text-sm text-gray-600 rounded-md hover:bg-gray-50'
+                      className='block px-3 pb-15 text-[20px] text-gray-600 rounded-md hover:bg-gray-50'
                       >
                       <span className={`text-base ${
                         pathname === '/API-BackendDevelopment'
-                        ? 'group-hover:text-gray-500 text-gray-600 underline underline-offset-3'
-                        : 'text-blue-400'
+                        ? 'group-hover:text-gray-500 text-blue-400 text-[20px] underline underline-offset-3'
+                        : 'text-black'
                       }
                       `}>
                         API & Backend Development

@@ -5,16 +5,16 @@ import Image from 'next/image'
 const PageAbout = () => {
   return (
     <>
-    <div className="flex  justify-between  pt-60  pb-25 px-10 ">
+    <div className="flex  justify-between  pt-60  pb-25 px-10 xl:px-10 md:px-5 ">
       {/* Left Section */}
-      <div className='font-serif text-5xl '>
+      <div className='font-serif text-5xl xl:text-5xl md:text-3xl text-blue-400'>
         <h2>Who we are</h2>
       </div>
 
       {/* Right Section */}
       <div>
         {/* Text */}
-        <div className='text-[18px] leading-8 '>
+        <div className='text-[18px] xl:text-[18px] md:text-[13px] leading-8 '>
           <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br /> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br /> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br /> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <br /> laborum.
             <br /><br />
@@ -22,7 +22,7 @@ const PageAbout = () => {
           </p>
         </div>
         {/* Image */}
-        <div className='relative h-180 w-180   mt-25'>
+        <div className='relative h-180  w-full   mt-25'>
           <Image 
           src="/images/about-us/about-us.jpg" 
           alt="about" 
