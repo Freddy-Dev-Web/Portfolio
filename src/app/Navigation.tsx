@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
     <div className='fixed  md:inline-block  top-0 left-0 z-10'>
-      <nav className='flex  justify-between  items-center w-screen h-20 bg-gray-200 px-15 xl:px-15 md:px-8 py-12 xl:py-12 md:py-5'>
+      <nav className='flex  justify-between  items-center w-screen h-20 bg-white px-15 xl:px-15 md:px-8 py-12 xl:py-12 md:py-5'>
         {/*Link Logo */}
         <div>
           <Link
