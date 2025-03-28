@@ -6,13 +6,13 @@ import Footer from './components/footer'
 const Principale = () => {
   return (
     <>
-      <div className='pt-40 pb-10 px-15 md:px-12'>
+      <div className='pt-40 pb-10 px-10 md:px-10'>
         {/* Section d'introduction */}
         <div className='flex flex-col items-center text-center pb-16'>
-          <p className='text-4xl sm:text-5xl font-semibold text-blue-400 pb-5'>
+          <p className='text-6xl sm:text-5xl font-semibold text-blue-400 pb-5'>
             Hello
           </p>
-          <p className='flex flex-col font-serif text-center text-lg sm:text-2xl leading-8 sm:leading-10'>
+          <p className='flex flex-col font-serif text-center text-4xl sm:text-2xl leading-8 sm:leading-10'>
             I am a Full-stack Web & Mobile developer who<br />
             transforms your ideas into high-performance <br />
             and innovative digital solutions.<br />
@@ -54,7 +54,7 @@ const Principale = () => {
         ].map((service, index) => (
           <div key={index} className='mb-12'>
             {/* Image */}
-            <div className='relative w-full h-[250px] md:h-[350px]'>
+            <div className='relative w-full h-[250px] md:h-[950px]'>
               <Image
                 src={service.imgSrc}
                 alt={service.title}
@@ -64,7 +64,7 @@ const Principale = () => {
             </div>
 
             {/* Contenu textuel et bouton */}
-            <div className='flex flex-col md:flex-row items-start md:items-center gap-y-4 justify-between py-6'>
+            <div className='flex flex-col md:flex-row items-start md:items-center gap-y-6 justify-between py-6'>
               {/* Texte à gauche */}
               <div className='text-left'>
                 <h3 className='font-serif text-2xl md:text-3xl pb-2'>{service.title}</h3>
